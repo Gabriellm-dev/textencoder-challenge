@@ -7,51 +7,49 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>TextEncoder - Challenge Alura+ONE</title>
 </head>
-<body>
-
-  <header>
-    <div class="header_container">
-      <div class="header_container_logo">
-        <img src="/assets/images/TEXTENCODER.png">
-      </div>
-      <div class="header_container_menu">
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </nav>
-      </div>
+<body class="container">
+  <header class="container_header">
+    <div class="container_header_logo">
+      <img src="/assets/images/TEXTENCODER.png">
+    </div>
+    <div class="container_header_menu">
+      <nav class="menu-desktop">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
     </div>
   </header>
-
-    <main class="main_container">
-    <div class="main_container_cabecalho">
-    </div>
-    <div class="main_container_input">
-      <div class="input">
-        <textarea id="input_text" placeholder="Enter your text here."></textarea>
-        <p>
+  <main class="container_main">
+    <section class="main_section_left">
+      <textarea class="input" id="input" placeholder="Enter your text here."></textarea>
+      <div class="main_section_left_warning">
+        <p class="left_warning">
           <img class="input_exclamation" src="/assets/images/exclamation.png" alt="exclamation logo">
-          Only lowercase letters and no accent 
+          Only lowercase letters and no accent
         </p>
+        <div class="buttons">
+          <div class="container_btn">
+            <button onclick = "encoder()" class="btn_encoder">Encoder</button>
+            <button onclick = "decoder() "class="btn_decoder">Decoder</button>
+          </div>
+        </div>
       </div>
-      <div id="main_container_output">
-        <h2>No messages were found</h2>
-        <span>Enter text you want to encrypt or decrypt</span>
+    </section>
+    <section class="main_section_right">
+      <div class="main_section_right_output" id="output">
+        <h2 class="right_output_title" id="output-title">No messages were found</h2>
+        <span class="right_output_span" id="output-text">Enter text you want to encrypt or decrypt</span>
+        <div class="right_output_respost" id="output-textarea">
+          <button onclick="copy()" id="output-copy" style="display: none;">Copy Text</button>
+        </div>
+        <div class="right_output_respost" id="output-message">
       </div>
-    </div>
-    <div class="buttons">
-      <div class="container_btn">
-        <button class="btn_encoder">Encoder</button>
-        <button class="btn_decoder">Decoder</button>
       </div>
-    </div>
   </main>
-
-  <footer>
-    <div>
+  <footer class="container_footer">
       <p class="footer_text">Developed by Gabriel Lima de Moura + Alura+ONE - 2024</p>
-    </div>
   </footer>
+  <script src="/assets/script/main.js" defer></script>
 </body>
 </html>
