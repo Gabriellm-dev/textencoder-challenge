@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>TextEncoder - Challenge Alura+ONE</title>
 </head>
+
 <body class="container">
   <header class="container_header">
     <div class="container_header_logo">
@@ -14,9 +15,9 @@
     </div>
     <div class="container_header_menu">
       <nav class="menu-desktop">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="/index.html">Home</a>
+        <a href="/assets/pages/about.html">About</a>
+        <a href="/assets/pages/contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -30,8 +31,8 @@
         </p>
         <div class="buttons">
           <div class="container_btn">
-            <button onclick = "encoder()" class="btn_encoder">Encoder</button>
-            <button onclick = "decoder() "class="btn_decoder">Decoder</button>
+            <button onclick="encoder()" class="btn_encoder">Encoder</button>
+            <button onclick="decoder() " class="btn_decoder">Decoder</button>
           </div>
         </div>
       </div>
@@ -41,15 +42,16 @@
         <h2 class="right_output_title" id="output-title">No messages were found</h2>
         <span class="right_output_span" id="output-text">Enter text you want to encrypt or decrypt</span>
         <div class="right_output_respost" id="output-textarea">
-          <button onclick="copy()" id="output-copy" style="display: none;">Copy Text</button>
+          <button class="btn_copy" onclick="copy()" id="output-copy" style="display: none;">Copy Text</button>
         </div>
-        <div class="right_output_respost" id="output-message">
-      </div>
+        <div class="right_output_respost-" id="output-message">
+        </div>
       </div>
   </main>
   <footer class="container_footer">
-      <p class="footer_text">Developed by Gabriel Lima de Moura + Alura+ONE - 2024</p>
+    <p class="footer_text">Developed by Gabriel Lima de Moura + Alura+ONE - 2024</p>
   </footer>
   <script src="/assets/script/main.js" defer></script>
 </body>
+
 </html>

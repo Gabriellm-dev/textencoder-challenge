@@ -172,12 +172,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    text-align: center;
     color: var(--terciary-color);
     width: 100%;
     height: 100%;
     margin: 2%;
-    text-align: left;
+    
 }
 
 .btn_copy {
@@ -192,13 +192,39 @@
     margin-bottom: 10%;
 }
 
+.btn_copy:hover {
+    background: var(--quaternary-color);
+    color: var(--light-gray);
+    transition: background 0.5s;
+}
+
+#output-copy {
+    display: block;
+    margin: auto; /* Centraliza horizontalmente */
+    position: relative; /* Define a posição como relativa para usar top e bottom */
+    top: 50%; /* Move o botão 50% para baixo */
+    transform: translateY(-50%); /* Ajusta o botão para cima 50% da sua própria altura */
+}
+
 .container_footer {
     background: linear-gradient(120deg, var(--primary-color) 0%, var(--black) 100%);
-    padding: 1%;
+    padding: 2px 0 2px 0;
     text-align: center;
     font-family: var(--primary-font);
     font-size: 20px;
     font-weight: 400;
+}
+
+/*CSS para o contact */
+
+.container_main_contact {
+    background-image: url(../images/img-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 900px) {
